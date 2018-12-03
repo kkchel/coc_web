@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<script language="javascript">
+	function re() {
+		history.back();
+	}
+	function click(e){
+	return routeEvent(e);
+	}
+	function write1(){
+	alert("글쓰기가 완료되었습니다.");
+	history.back();
+	}
+//	document.captureEvents(Event.CLICK);
+	document.onClick = click;
+</script>
+<style>
+p.tt{ font-size:35 ; font-weight:bolder ; color:white; line-height:2 }	
+</style>
+</HEAD>
+<BODY  background="../info/bg.png">
+<br><br>
+<center><p class=tt>  글&nbsp&nbsp&nbsp&nbsp&nbsp쓰&nbsp&nbsp&nbsp&nbsp&nbsp기</p><center>
+<table border =1 align="center" border=1 bgcolor=#ffffff>
+<form>
+<tr>
+	<th>글제목</th>
+	<th align="left"><input type="text" size="60"></th>
+</tr>
+<tr>
+	<th>글쓴이</th>
+	<th align="left"><input type="text" size="10" maxlength="10"></th>
+</tr>
+<tr>
+	<th>비밀번호</th>
+	<th align="left"><input type="password" size="4" maxlength="4"></textarea></th>
+</tr>
+<tr>
+	<th>내용</th>
+	<th align="left"><textarea rows="10" cols="60"></textarea></th>
+</tr>
+</table>
+<br>
+<a href="talk.htm"><input type="button" value="글쓰기" onclick="write1()"></a>&nbsp;&nbsp;
+<input type="reset" value="다시 쓰기">&nbsp;&nbsp;
+<input type="button" value="취소" onclick=re()>
+</form>
+</center>
+</BODY>
+</HTML>

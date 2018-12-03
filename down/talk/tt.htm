@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<script language="javascript">
+	function re() {
+		history.back();
+	}
+	function click(e){
+	return routeEvent(e);
+	}
+	function write1(){
+	alert("글쓰기가 완료되었습니다.");
+	history.back();
+	}
+//	document.captureEvents(Event.CLICK);
+	document.onClick = click;
+</script>
+<style>
+
+p.tt{ font-size:35 ; font-weight:bolder ; color:white; line-height:2 }
+
+</style>
+</HEAD>
+<BODY  background="../info/bg.png">
+<br><br>
+<center><p class=tt> 게&nbsp&nbsp&nbsp&nbsp&nbsp시&nbsp&nbsp&nbsp&nbsp&nbsp판</p><center>
+
+<table border =1 align="center" border=1 bgcolor=#ffffff>
+<form>
+<tr>
+	<th>글제목</th>
+	<th align=left>&nbsp&nbsp첫번째 글</th>
+</tr>
+<tr>
+	<th>글쓴이</th>
+	<th align=left>&nbsp&nbsp나</th>
+</tr>
+<tr>
+	<th>작성일자</th>
+	<th align="left">&nbsp&nbsp2016/11/21</th>
+</tr>
+<tr>
+	<th>내용</th>
+	<th align="left">게시판 다 만들었다&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></th>
+</tr>
+</table>
+<br>
+<input type="button" value="뒤로" onclick=re()>
+</form>
+</center>
+</BODY>
+</HTML>
